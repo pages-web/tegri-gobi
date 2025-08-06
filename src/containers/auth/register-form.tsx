@@ -20,8 +20,8 @@ import { passwordZod } from "@/lib/zod"
 import { LoadingIcon } from "@/components/ui/loading"
 import { useState } from "react"
 import { useTranslations } from "next-intl"
-import { SuccessPopup } from "@/components/ui/success-popup"
-import { PrivacyTermsModal } from "@/components/ui/privacy-terms-modal"
+import { SuccessPopup } from "@/components/common/success-popup"
+import { PrivacyTermsModal } from "@/components/common/privacy-terms-modal"
 
 
 

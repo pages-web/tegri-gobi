@@ -1,12 +1,12 @@
 import React from 'react'
-import AccommodationList from '../components/AccommodationList';
-import TrendActivitiesSection from '../components/TrendActivitiesSection';
-import JourneySection from '../components/JourneySection';
-import GallerySection from '../components/GallerySection';
-import NewsSection from '../components/NewsSection';
-import MemoriesSection from "../components/MemoriesSection"
-import GettingHereSection from '../components/GettingHereSection';
-import SubscriptionSection from '../components/SubscriptionSection';
+import AccommodationList from '../../components/AccommodationList';
+import TrendActivitiesSection from '../../components/TrendActivitiesSection';
+import JourneySection from '../../components/JourneySection';
+import GallerySection from '../../components/GallerySection';
+import NewsSection from '../../components/NewsSection';
+import MemoriesSection from "../../components/MemoriesSection"
+import GettingHereSection from '../../components/GettingHereSection';
+import SubscriptionSection from '../../components/SubscriptionSection';
 
 export default function Home() {
   return (

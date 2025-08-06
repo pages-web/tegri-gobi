@@ -1,7 +1,7 @@
 import React from 'react'
 import Accommodation from './Accommodation';
 import LodgeStays from './LodgeStays';
-import SubscriptionSection from '@/app/components/SubscriptionSection';
+import SubscriptionSection from '../../../components/SubscriptionSection';
 
 const Page = () => {
   return (

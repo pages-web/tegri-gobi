@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Roboto } from 'next/font/google';
-import ConditionalLayout from "../components/layout/ConditionalLayout";
+import ConditionalLayout from "../../components/layout/ConditionalLayout";
 import "./globals.css";
 import Apollo from "./ApolloClient";
 import CurrentConfigProvider from "@/containers/config/currentConfig";

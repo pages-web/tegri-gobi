@@ -328,17 +328,15 @@ const AuthContainer = ({ initialView = "login" }: AuthContainerProps) => {
               <div className='flex justify-center mt-6 space-x-3'>
                 <button
                   onClick={switchToLogin}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    currentView === "login" ? "bg-white w-8" : "bg-white/50 w-2"
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${currentView === "login" ? "bg-white w-8" : "bg-white/50 w-2"
+                    }`}
                 />
                 <button
                   onClick={switchToSignup}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    currentView === "signup"
-                      ? "bg-white w-8"
-                      : "bg-white/50 w-2"
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${currentView === "signup"
+                    ? "bg-white w-8"
+                    : "bg-white/50 w-2"
+                    }`}
                 />
               </div>
             </div>

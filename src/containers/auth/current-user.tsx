@@ -85,8 +85,8 @@ const CurrentUser = ({ isScrolled }: CurrentUserProps) => {
       asChild
       variant="outline"
       className={`border-white/30 hover:bg-white/10 hover:border-white/50 bg-transparent rounded-full px-6 py-2 text-sm font-medium transition-all duration-200 ${isScrolled
-          ? 'text-gray-900 border-gray-300 hover:bg-gray-100 hover:border-gray-400'
-          : 'text-white border-white/30 hover:bg-white/10 hover:border-white/50'
+        ? 'text-gray-900 border-gray-300 hover:bg-gray-100 hover:border-gray-400'
+        : 'text-white border-white/30 hover:bg-white/10 hover:border-white/50'
         }`}
     >
       <Link href="/login">

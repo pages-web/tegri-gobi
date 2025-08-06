@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 import { MapPin, Phone, Mail, CarFront, ArrowRight, Plus } from 'lucide-react'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { PrivacyTermsModal } from "@/components/ui/privacy-terms-modal"
+import { PrivacyTermsModal } from "@/components/common/privacy-terms-modal"
 import Image from 'next/image'
 
 const data = [
