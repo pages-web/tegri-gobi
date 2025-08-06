@@ -1,0 +1,115 @@
+{
+  "Header": {
+    "Accommodation": "1",
+    "Activities": "2",
+    "Dining": "3",
+    "Lodge stays": "4",
+    "Spa & Wellness": "5",
+    "Offers": "6",
+    "About": "7",
+    "Shop": "8",
+    "SignIn": "9"
+  },
+  "Accommodation": {
+    "Comfort Rooted in Nature": "10",
+    "Experience refined comfort": "11",
+    "See All": "12"
+  },
+  "Activities": {
+    "Experience our trend activities": "13",
+    "Our trending experiences": "14"
+  },
+  "Journey": {
+    "Your Desert Journey": "15",
+    "Awaken your senses": "16"
+  },
+  "News": {
+    "Latest news": "17",
+    "See how the sands shift": "18",
+    "See All": "19"
+  },
+  "Memories": {
+    "Memories Made at Tegri Gobi": "20",
+    "See how the sands shift": "21"
+  },
+  "Getting": {
+    "Getting here": "22",
+    "Reaching the tranquility": "23",
+    "bulgan sum": "Өмнөговь аймаг, Булган сум",
+    "south": "Өмнөговь, 21220, Монгол",
+    "Domestic": "Даланзадгад руу дотоодын нислэг (~1.5 цаг)",
+    "Chinghis Khaan": "Чингис Хаан Олон улсын нисэх буудал (UBN)",
+    "Dalanzadgad": "Даланзадгадын нисэх буудал (DLZ)",
+    "hours": " ~2 цагийн авто зам",
+    "Get Directions": "Зам заалгах"
+  },
+  "Subscription": {
+    "Be the first to know": "24",
+    "To receive updates": "25",
+    "SEND": "26"
+  },
+  "Footer": {
+    "About": "ТУХАЙ",
+    "New Opening": "Шинэ нээлт",
+    "Sustainability": "Тогтвортой байдал",
+    "Careers": "Ажлын байр",
+    "Blog": "Блог",
+    "Experience": "ТУРШЛАГА",
+    "Legal Notice": "Хуулийн мэдэгдэл",
+    "Download brochure": "Товхимол татах",
+    "Gallery": "Зургийн цомог",
+    "FAQ": "Түгээмэл асуулт",
+    "Visit hotels": "Дэлхий даяар 150 зочид буудлаас аль нэгэнд зочилно уу",
+    "For customizations": "захиалгат үйлчилгээ, тохиргоо, загварын зөвлөгөө авахын тулд.",
+    "Contact Us": "Холбоо барих",
+    "Copyright": "© 2025 Тэгри Говь Амралтын газар",
+    "Instagram": "Инстаграм",
+    "Facebook": "Фэйсбүүк",
+    "Youtube": "Ютүүб",
+    "Mail": "И-мэйл"
+  },
+  "Login": {
+    "NameRequired": "1",
+    "WrongPhoneOrMail": "1",
+    "PasswordRequired": "1",
+    "Welcome back": "1",
+    "Glad to see you": "1",
+    "Email": "1",
+    "Password": "1",
+    "Remember me": "1",
+    "Forgot password": "1",
+    "SigningIn": "1",
+    "SignIn": "1",
+    "Continue with Google": "1",
+    "dont": "1",
+    "Sign up": "1"
+  },
+  "SignUp": {
+    "First name is required": "2",
+    "Last name is required": "2",
+    "Please enter a valid email": "2",
+    "Please confirm your password": "2",
+    "You must agree to the terms and conditions": "2",
+    "Passwords dont match": "2",
+    "Account created successfully": "2",
+    "Please check your email for verification": "2",
+    "Create an account": "2",
+    "Lets get started with your journey": "2",
+    "First Name": "2",
+    "Last Name": "2",
+    "Email": "2",
+    "Password": "2",
+    "Confirm Password": "2",
+    "I agree with": "2",
+    "Privacy Policy": "2",
+    "Terms of Conditions": "2",
+    "Create Account": "2",
+    "Sign up with Google": "2",
+    "Already have an account": "2",
+    "Sign in": "2",
+    "Confirmation": "Баталгаажуулалт",
+    "Your account created": "Таны бүртгэл үүсгэгдлээ",
+    "ConfirmDesc": "Бид таны и-мэйл хаягт бүртгэлийн мэдээллийг илгээлээ.",
+    "Continue": "Үргэлжлүүлэх"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "Header": {
+    "Accommodation": "Accommodation",
+    "Activities": "Activities",
+    "Dining": "Dining",
+    "Lodge stays": "Lodge stays",
+    "Spa & Wellness": "Spa & Wellness",
+    "Offers": "Offers",
+    "About": "About",
+    "Shop": "Shop",
+    "SignIn": "Sign in"
+  },
+  "Accommodation": {
+    "Comfort Rooted in Nature": "Comfort Rooted in Nature",
+    "Experience refined comfort": "Experience refined comfort and grounded simplicity in our Gobi-inspired lodges — where every stay connects you to nature, stillness, and yourself. Let the vastness of the Gobi surround you in curated comfort, designed to restore and reconnect.",
+    "See All": "See All"
+  },
+  "Activities": {
+    "Experience our trend activities": "Experience our trend activities",
+    "Our trending experiences": "Our trending experiences blend stillness, joy, and connection — perfect for those seeking more than just a getaway. From slow desert walks to hands-on cultural moments, explore the activities our guests return for again and again."
+  },
+  "Journey": {
+    "Your Desert Journey": "Your Desert Journey",
+    "Awaken your senses": "Awaken your senses in the Gobi through curated experiences that blend stillness, movement, and nature — from quiet sunrise meditations to guided desert explorations."
+  },
+  "News": {
+    "Latest news": "Latest news",
+    "See how the sands shift": "See how the sands shift — read our latest updates, guest stories, and seasonal happenings in and around the resort.",
+    "See All": "See All"
+  },
+  "Memories": {
+    "Memories Made at Tegri Gobi": "Memories Made at Tegri Gobi",
+    "See how the sands shift": "See how the sands shift — read our latest updates, guest stories, and seasonal happenings in and around the resort."
+  },
+  "Getting": {
+    "Getting here": "Getting here",
+    "Reaching the tranquility": "Reaching the tranquility of Tegri Gobi is simple — with domestic flights from Ulaanbaatar and a scenic drive through the heart of the South Gobi.",
+    "bulgan sum": "Bulgan Soum, Ömnögovi Province,",
+    "south": "South Gobi 21220, Mongolia",
+    "Domestic": "Domestic flight to Dalanzadgad (~1.5 hrs) from ",
+    "Chinghis Khaan": "Chinggis Khaan International Airport (UBN)",
+    "Dalanzadgad": "Dalanzadgad Airport (DLZ)",
+    "hours": " ~2 hours by car",
+    "Get Directions": "Get Directions"
+  },
+  "Subscription": {
+    "Be the first to know": "Be the first to know",
+    "To receive updates": "To receive updates about exclusive experiences, events, new destinations and more, please register your interest.",
+    "SEND": "SEND"
+  },
+  "Footer": {
+    "About": "ABOUT",
+    "New Opening": "New Opening",
+    "Sustainability": "Sustainability",
+    "Careers": "Careers",
+    "Blog": "Blog",
+    "Experience": "EXPERIENCE",
+    "Legal Notice": "Legal Notice",
+    "Download brochure": "Download brochure",
+    "Gallery": "Gallery",
+    "FAQ": "FAQ",
+    "Visit hotels": "Visit one of our 150 hotels worldwide",
+    "For customizations": "for customizations, fittings & styling advice.",
+    "Contact Us": "Contact Us",
+    "Copyright": "© 2025 Tegri Gobi Resort",
+    "Instagram": "Instagram",
+    "Facebook": "Facebook",
+    "Youtube": "Youtube",
+    "Mail": "Mail"
+  },
+  "Login": {
+    "NameRequired": "Please enter your username",
+    "WrongPhoneOrMail": "Invalid phone number or email address",
+    "PasswordRequired": "Please enter your password",
+    "Welcome back": "Welcome back",
+    "Glad to see you": "Glad to see you! Let’s make something amazing happen",
+    "Email": "Email",
+    "Password": "Password",
+    "Remember me": "Remember me",
+    "Forgot password": "Forgot password?",
+    "SigningIn": "Signing in...",
+    "SignIn": "Sign In",
+    "Continue with Google": "Continue with Google",
+    "dont": "Don't have an account yet?",
+    "Sign up": "Sign up"
+  },
+  "SignUp": {
+    "First name is required": "First name is required",
+    "Last name is required": "Last name is required",
+    "Please enter a valid email": "Please enter a valid email",
+    "Please confirm your password": "Please confirm your password",
+    "You must agree to the terms and conditions": "You must agree to the terms and conditions",
+    "Passwords dont match": "Passwords don't match",
+    "Account created successfully": "Account created successfully!",
+    "Please check your email for verification": "Please check your email for verification.",
+    "Create an account": "Create an account",
+    "Lets get started with your journey": "Lets get started with your journey",
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Confirm Password": "Confirm Password",
+    "I agree with": "I agree with",
+    "Privacy Policy": "Privacy Policy",
+    "Terms of Conditions": "Terms of Conditions",
+    "Create Account": "Create Account",
+    "Sign up with Google": "Sign up with Google",
+    "Already have an account": "Already have an account?",
+    "Sign in": "Sign in",
+    "Confirmation": "Confirmation",
+    "Your account created": "Your account created",
+    "ConfirmDesc": "We sent your email account booking information. Protect your security by never sharing your personal or credit card information over the phone, by email or chat.",
+    "Continue": "Continue"
+  }
+}
