@@ -87,7 +87,7 @@ const Reports = () => {
               <h1 className="text-base sm:text-base xl:text-lg font-medium mb-2">
                 {data.title}
               </h1>
-              <div className="w-full aspect-[4/3] relative">{data.image}</div>
+              <div className="w-full  relative">{data.image}</div>
             </div>
           );
         })}

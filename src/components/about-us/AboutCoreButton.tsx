@@ -11,37 +11,32 @@ const AboutCoreButtons = ({ onViewChange }: CoreButtonsProps) => {
     "overview"
   );
 
-  const handleOverviewClick = () => {
-    setActiveView("overview");
-    onViewChange("overview");
+  const handleClick = (view: "overview" | "reports") => {
+    setActiveView(view);
+    onViewChange(view);
   };
 
-  const handleReportsClick = () => {
-    setActiveView("reports");
-    onViewChange("reports");
-  };
+  const buttons: { label: string; view: "overview" | "reports" }[] = [
+    { label: "Overview", view: "overview" },
+    { label: "Reports", view: "reports" },
+  ];
 
   return (
     <div className="flex items-center gap-3 self-stretch">
-      <button
-        onClick={handleOverviewClick}
-        className={`flex items-center justify-center cursor-pointer h-9 py-2 px-3 gap-2.5 rounded-[100px] text-center font-roboto text-sm font-normal leading-none ${activeView === "overview"
-          ? "bg-primary text-white"
-          : "bg-white text-black border border-[#DBDBDB]"
-          }`}
-      >
-        Overview
-      </button>
-      <button
-        onClick={handleReportsClick}
-        className={`flex items-center justify-center cursor-pointer h-9 py-2 px-3 gap-2.5 rounded-[100px] text-center font-roboto text-sm font-normal leading-none ${activeView === "reports"
-          ? "bg-primary text-white"
-          : "bg-white text-black border border-[#DBDBDB]"
-          }`}
-      >
-        Reports
-      </button>
+      {buttons.map((btn) => (
+        <button
+          key={btn.view}
+          onClick={() => handleClick(btn.view)}
+          className={`flex items-center justify-center cursor-pointer h-9 py-2 px-3 gap-2.5 rounded-[100px] text-center font-roboto text-sm font-normal leading-none ${activeView === btn.view
+              ? "bg-[#D33718] text-white"
+              : "bg-white text-black border border-[#DBDBDB]"
+            }`}
+        >
+          {btn.label}
+        </button>
+      ))}
     </div>
   );
 };
+
 export default AboutCoreButtons;
