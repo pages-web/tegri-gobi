@@ -1,48 +1,46 @@
-import LanguageSwitcher from '../LanguageSwitch';
-import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
-import CurrentUser from '@/containers/auth/current-user';
-
+import LanguageSwitcher from "../LanguageSwitch";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import CurrentUser from "@/containers/auth/current-user";
 
 export default function Header() {
-  const t = useTranslations('Header');
+  const t = useTranslations("Header");
 
   const Navbar = [
     {
       name: t("Accommodation"),
-      href: '/accommodation'
+      href: "/accommodation",
     },
     {
       name: t("Activities"),
-      href: '/activities'
+      href: "/activities",
     },
     {
       name: t("Dining"),
-      href: '/dining'
+      href: "/dining",
     },
     {
       name: t("Lodge stays"),
-      href: '/lodge-stays'
+      href: "/lodge-stays",
     },
     {
       name: t("Spa & Wellness"),
-      href: '/spa-wellness'
+      href: "/spa-wellness",
     },
     {
       name: t("Offers"),
-      href: '/offers'
+      href: "/offers",
     },
     {
       name: t("About"),
-      href: '/about'
+      href: "/about-us",
     },
     {
       name: t("Shop"),
-      href: '/shop'
+      href: "/shop",
     },
   ];
-
 
   return (
     <header className="fixed left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md top-0 py-5">

@@ -1,15 +1,14 @@
-'use client';
+"use client";
 
-import LanguageSwitcher from '../LanguageSwitch';
-import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
-import CurrentUser from '@/containers/auth/current-user';
-import { useState, useEffect } from 'react';
-
+import LanguageSwitcher from "../LanguageSwitch";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import CurrentUser from "@/containers/auth/current-user";
+import { useState, useEffect } from "react";
 
 export default function Header() {
-  const t = useTranslations('Header');
+  const t = useTranslations("Header");
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,52 +17,53 @@ export default function Header() {
       setIsScrolled(scrollTop > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const Navbar = [
     {
       name: t("Accommodation"),
-      href: '/accommodation'
+      href: "/accommodation",
     },
     {
       name: t("Activities"),
-      href: '/activities'
+      href: "/activities",
     },
     {
       name: t("Dining"),
-      href: '/dining'
+      href: "/dining",
     },
     {
       name: t("Lodge stays"),
-      href: '/lodge-stays'
+      href: "/lodge-stays",
     },
     {
       name: t("Spa & Wellness"),
-      href: '/spa-wellness'
+      href: "/spa-wellness",
     },
     {
       name: t("Offers"),
-      href: '/offers'
+      href: "/offers",
     },
     {
       name: t("About"),
-      href: '/about-us'
+      href: "/about-us",
     },
     {
       name: t("Shop"),
-      href: '/shop'
+      href: "/shop",
     },
   ];
 
-
   return (
-    <header className={`fixed left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md top-0 py-5' : 'bg-transparent top-9'
-      }`}>
+    <header
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-md top-0 py-5" : "bg-transparent top-9"
+      }`}
+    >
       <div className="max-w-none px-15">
         <div className="flex justify-between items-center h-10">
-
           <Link className="flex items-center" href="/">
             <Image
               src="/images/header-logo.png"
@@ -79,10 +79,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ${isScrolled
-                  ? 'text-gray-900 hover:text-gray-600'
-                  : 'text-white hover:text-white/80'
-                  }`}
+                className={`text-sm font-medium transition-colors duration-200 ${
+                  isScrolled
+                    ? "text-gray-900 hover:text-gray-600"
+                    : "text-white hover:text-white/80"
+                }`}
               >
                 {item.name}
               </Link>
