@@ -49,7 +49,7 @@ export default function Header() {
     },
     {
       name: t("About"),
-      href: '/about'
+      href: '/about-us'
     },
     {
       name: t("Shop"),

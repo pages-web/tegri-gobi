@@ -19,10 +19,10 @@ export default function ConditionalLayout({ children }: ConditionalLayoutProps) 
   const useSecondaryHeader = secondaryHeaderRoutes.some(route => pathname.endsWith(route)) || pathname.includes('/rooms/');
 
   return (
-    <>
+    <div className='flex flex-col h-screen'>
       {!hideLayout && (useSecondaryHeader ? <SecondaryHeader /> : <Header />)}
       {children}
-      {!hideLayout && <Footer />}
-    </>
+      <div className='flex flex-col h-full justify-end items-end'>      {!hideLayout && <Footer />}</div>
+    </div>
   );
 }
