@@ -30,7 +30,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white border-t border-[#DADADA]">
-      <div className="w-full px-4 sm:px-8 md:px-16 xl:px-24 py-8 md:py-12">
+      <div className="w-full px-4 sm:px-8 md:px-16 xl:px-15 py-8 md:py-12">
         <div className="flex flex-col gap-8 md:hidden">
           <div className="flex flex-col items-center gap-6 text-center">
             <Image
