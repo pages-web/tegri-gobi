@@ -1,5 +1,7 @@
+"use client"
+
 import React from 'react'
-import Image from 'next/image'
+import Image from './ui/image'
 import {
   Carousel,
   CarouselContent,
@@ -7,14 +9,19 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { useCmsPosts } from "@/sdk/queries/cms"
 
 const GallerySection = () => {
-  const images = [
-    { src: '/images/1.png', alt: 'Gallery Image 1' },
-    { src: '/images/2.png', alt: 'Gallery Image 2' },
-    { src: '/images/3.png', alt: 'Gallery Image 3' },
-    { src: '/images/4.png', alt: 'Gallery Image 4' }
-  ]
+  const { posts: galleryDatas } = useCmsPosts({
+    categoryId: "zwCVBrt1HszVFqLUXsVBi",
+  })
+
+  const galleryData = galleryDatas.filter((post) =>
+    post.categoryIds.includes("zwCVBrt1HszVFqLUXsVBi")
+  )
+
+  console.log(galleryData);
+
 
   return (
     <section className="w-full py-10">
@@ -28,13 +35,12 @@ const GallerySection = () => {
           }}
         >
           <CarouselContent className="-ml-4">
-            {images.map((image, index) => (
+            {galleryData.flatMap((post) => post.images).map((image, index) => (
               <CarouselItem key={index} className="pl-4 basis-[60%] md:basis-[70%] lg:basis-[60%]">
                 <div className="relative h-[300px] lg:h-[400px] 2xl:h-[540px] w-full rounded-2xl overflow-hidden bg-gray-100 shadow-xl transition-all duration-300 hover:shadow-2xl">
                   <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
+                    src={image.url}
+                    alt={image.name}
                     className="object-cover rounded-2xl"
                     priority={index === 0}
                   />
