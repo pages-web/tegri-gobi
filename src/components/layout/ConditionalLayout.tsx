@@ -16,7 +16,7 @@ export default function ConditionalLayout({ children }: ConditionalLayoutProps) 
   const secondaryHeaderRoutes = ['/contact-us'];
 
   const hideLayout = noLayoutRoutes.some(route => pathname.endsWith(route));
-  const useSecondaryHeader = secondaryHeaderRoutes.some(route => pathname.endsWith(route)) || pathname.includes('/rooms/');
+  const useSecondaryHeader = secondaryHeaderRoutes.some(route => pathname.endsWith(route)) || pathname.includes('/rooms/') || pathname.includes('/news/');
 
   return (
     <div className='flex flex-col h-screen'>

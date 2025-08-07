@@ -1,45 +1,31 @@
+"use client"
+
 import React from 'react'
-import Image from 'next/image'
+import Image from './ui/image'
 import { Link } from '@/i18n/navigation'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useCmsPosts } from "@/sdk/queries/cms"
 
 const NewsSection = () => {
   const t = useTranslations("News")
-  const newsItems = [
-    {
-      id: 1,
-      image: '/images/1.png',
-      tags: 'Guide',
-      date: 'July 20, 2025',
-      title: 'Stargazing Nights Return',
-      description: 'Experience the Gobi\'s breathtaking night sky with our guided stargazing sessions, now available every weekend through autumn.'
-    },
-    {
-      id: 2,
-      image: '/images/2.png',
-      tags: 'Travel',
-      date: 'July 15, 2025',
-      title: 'Desert Wellness Retreat Wrap-Up',
-      description: 'Last week\'s slow-living retreat brought together mindful travelers from around the world for yoga, journaling, and deep desert stillness.'
-    },
-    {
-      id: 3,
-      image: '/images/4.png',
-      tags: 'Travel',
-      date: 'July 02, 2025',
-      title: 'Autumn Bookings Now Open',
-      description: 'Plan your escape early — reservations for the serene Gobi autumn season are now available, with limited lodge availability in October.'
-    },
-    {
-      id: 4,
-      image: '/images/1.png',
-      tags: 'Travel',
-      date: 'July 02, 2025',
-      title: 'Autumn Bookings Now Open',
-      description: 'Plan your escape early — reservations for the serene Gobi autumn season are now available, with limited lodge availability in October.'
-    }
-  ]
+
+  const { posts: newsDatas } = useCmsPosts({
+    categoryId: "DaO_n5qfyK6p_-TlT9Bou",
+  })
+
+  const newsData = newsDatas.filter((post) =>
+    post.categoryIds.includes("DaO_n5qfyK6p_-TlT9Bou")
+  )
+
+  const formatDate = (dateString: string) => {
+    return new Date(dateString).toLocaleDateString("mn-MN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  }
+
 
   return (
     <section className="w-full mx-auto py-10">
@@ -62,11 +48,11 @@ const NewsSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-        {newsItems.map((item) => (
-          <Link href="/" key={item.id}>
+        {newsData.map((item) => (
+          <Link href={`/news/${item._id}`} key={item._id}>
             <article className="flex flex-col items-end gap-4">
               <Image
-                src={item.image}
+                src={item.thumbnail.url}
                 alt={item.title}
                 width={424}
                 height={380}
@@ -75,9 +61,16 @@ const NewsSection = () => {
 
               <div className="flex flex-col items-start gap-3">
                 <div className="line-clamp-1 text-[14px] font-normal leading-normal text-black/70 font-roboto overflow-hidden flex items-center gap-2">
-                  <span className="font-medium">{item.tags}</span>
-                  <span>•</span>
-                  <span>{item.date}</span>
+                  {item?.tags && Array.isArray(item.tags) && item.tags.length > 0 && (
+                    <>
+                      <span className="font-medium">{item.tags[0]?.name}</span>
+                      <span>•</span>
+                    </>
+                  )}
+
+                  {formatDate(
+                    (item as any).createdAt || new Date().toISOString()
+                  )}
                 </div>
 
                 <h3 className="text-black text-lg font-normal leading-normal font-roboto">
@@ -85,10 +78,11 @@ const NewsSection = () => {
                 </h3>
 
                 <p className="overflow-hidden text-black/70 text-ellipsis text-[14px] font-normal leading-normal font-roboto">
-                  {item.description}
+                  {item.excerpt}
                 </p>
               </div>
-            </article></Link>
+            </article>
+          </Link>
         ))}
       </div>
     </section>

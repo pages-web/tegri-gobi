@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client"
+import { gql } from "@apollo/client";
 
 const CmsPosts = gql`
   query PostList(
@@ -98,7 +98,7 @@ const CmsPosts = gql`
       }
     }
   }
-`
+`;
 
 const CmsPostDetail = gql`
   query Post($id: String) {
@@ -202,7 +202,7 @@ const CmsPostDetail = gql`
       customFieldsMap
     }
   }
-`
+`;
 
 const CmsTags = gql`
   query CmsTags(
@@ -230,7 +230,7 @@ const CmsTags = gql`
       updatedAt
     }
   }
-`
+`;
 
-const queries = { CmsPosts, CmsPostDetail, CmsTags }
-export default queries
+const queries = { CmsPosts, CmsPostDetail, CmsTags };
+export default queries;

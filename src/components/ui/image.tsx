@@ -7,7 +7,7 @@ import cloudflareLoader from "@/lib/image-loader";
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/others/use-media-query";
 
-const PLACEHOLDER = "/images/placeholder-1.png";
+const PLACEHOLDER = "/images/1.png";
 
 const Image = ({
   src,
@@ -45,7 +45,11 @@ const Image = ({
   };
 
   const handleComplete = () => setLoading(false);
-  const onError = () => setSrcI(PLACEHOLDER);
+  const onError = () => {
+    if (srcI !== PLACEHOLDER) {
+      setSrcI(PLACEHOLDER);
+    }
+  };
   const fill = (!width && !height) || undefined;
   const fromCF = srcI.includes("https://imagedelivery.net/");
   return (

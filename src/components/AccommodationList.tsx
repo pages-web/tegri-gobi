@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
-  Users,
+  VectorSquare,
   Bed,
   Eye,
   Wind,
@@ -13,7 +13,9 @@ import {
   Bath,
   TreePine,
   ArrowRight,
-  Plus
+  Plus,
+  Users,
+  ShowerHead
 } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -28,11 +30,11 @@ interface RoomInformation {
 const getIconByLabel = (label: string): React.ReactNode => {
   const normalizedLabel = label.toLowerCase().trim();
 
-  if (normalizedLabel.includes('m2') || normalizedLabel.includes('size')) {
-    return <Users className="w-4 h-4" />;
+  if (normalizedLabel.includes('m²') || normalizedLabel.includes('size')) {
+    return <VectorSquare className="w-4 h-4" />;
   }
   if (normalizedLabel.includes('guest')) {
-    return <Bed className="w-4 h-4" />;
+    return <Users className="w-4 h-4" />;
   }
   if (normalizedLabel.includes('stargazing') || normalizedLabel.includes('window')) {
     return <Eye className="w-4 h-4" />;
@@ -46,8 +48,11 @@ const getIconByLabel = (label: string): React.ReactNode => {
   if (normalizedLabel.includes('wifi')) {
     return <Wifi className="w-4 h-4" />;
   }
-  if (normalizedLabel.includes('bath') || normalizedLabel.includes('shower')) {
+  if (normalizedLabel.includes('bath')) {
     return <Bath className="w-4 h-4" />;
+  }
+  if (normalizedLabel.includes('shower')) {
+    return <ShowerHead className="w-4 h-4" />;
   }
   if (normalizedLabel.includes('terrace')) {
     return <TreePine className="w-4 h-4" />;

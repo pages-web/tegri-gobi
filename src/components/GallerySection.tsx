@@ -20,9 +20,6 @@ const GallerySection = () => {
     post.categoryIds.includes("zwCVBrt1HszVFqLUXsVBi")
   )
 
-  console.log(galleryData);
-
-
   return (
     <section className="w-full py-10">
       <div className="relative w-full">
