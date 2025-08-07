@@ -6,7 +6,7 @@ interface CoreButtonsProps {
   onViewChange: (view: "overview" | "reports") => void;
 }
 
-const CoreButtons = ({ onViewChange }: CoreButtonsProps) => {
+const AboutCoreButtons = ({ onViewChange }: CoreButtonsProps) => {
   const [activeView, setActiveView] = useState<"overview" | "reports">(
     "overview"
   );
@@ -46,4 +46,4 @@ const CoreButtons = ({ onViewChange }: CoreButtonsProps) => {
     </div>
   );
 };
-export default CoreButtons;
+export default AboutCoreButtons;
