@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Banner from "@/components/about-us/Banner";
 import Contact from "@/components/about-us/Contact";
-import CoreButtons from "@/components/about-us/CoreButtons";
+import CoreButtons from "@/components/about-us/AboutCoreButton";
 import Greeting from "@/components/about-us/Greeting";
 import OurService from "@/components/about-us/OurService";
 import Reports from "@/components/about-us/Reports";
+import AboutCoreButtons from "@/components/about-us/AboutCoreButton";
 
 const Page = () => {
   const [currentView, setCurrentView] = useState<"overview" | "reports">(
@@ -34,7 +35,7 @@ const Page = () => {
         </div>
       </div>
       <div className="flex flex-col items-start self-stretch gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-8 lg:px-6 xl:px-15 py-6 sm:py-8 lg:py-10 w-full">
-        <CoreButtons onViewChange={handleViewChange} />
+        <AboutCoreButtons onViewChange={handleViewChange} />
 
         {currentView === "overview" ? (
           <>
