@@ -15,7 +15,7 @@ export default function ConditionalLayout({
   const pathname = usePathname();
 
   const noLayoutRoutes = ["/login", "/signup"];
-  const secondaryHeaderRoutes = ["/contact-us", "/dining"];
+  const secondaryHeaderRoutes = ["/contact-us", "/dining", "spa-wellness"];
 
   const hideLayout = noLayoutRoutes.some(route => pathname.endsWith(route));
   const useSecondaryHeader = secondaryHeaderRoutes.some(route => pathname.endsWith(route)) || pathname.includes('/rooms/') || pathname.includes('/news/');

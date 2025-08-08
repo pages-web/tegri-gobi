@@ -59,6 +59,21 @@ const GridImages = () => {
           />
         </div>
       </div>
+      <div className="flex flex-col items-start gap-3 pb-20">
+        <h1 className="text-black font-roboto text-[30px] font-normal leading-normal">
+          Where curated cocktails meet world-class cuisine
+        </h1>
+        <p className="text-black/70 font-roboto text-base font-normal leading-normal">
+          Discover a dining experience that honors the wild soul of the Gobi. At
+          Tegri Gobi, every dish begins with intention—locally sourced,
+          seasonally prepared, and deeply inspired by Mongolia’s nomadic
+          heritage. Whether it’s sun-dried curds, fire-roasted lamb, or herbal
+          teas hand-picked from the steppe, your meals are a celebration of
+          simplicity, silence, and the land itself. Dine beneath the open sky or
+          in our warm desert lodge—where each flavor connects you to place, to
+          people, and to something timeless.
+        </p>
+      </div>
     </div>
   );
 };
