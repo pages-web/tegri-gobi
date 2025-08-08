@@ -5,7 +5,7 @@ const RootedDeep = () => {
         Desert Flavors, Rooted Deep
       </h1>
       <p className="text-[rgba(0,0,0,0.7)] font-roboto text-base not-italic font-normal leading-[21px]">
-        At Tegri Gobi, dining is more than a meal—it's a journey through
+        At Tegri Gobi, dining is more than a meal—its a journey through
         Mongolia’s culinary soul. Our chefs craft each dish with locally <br />
         sourced ingredients, fusing traditional nomadic recipes with modern
         finesse.

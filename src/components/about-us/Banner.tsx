@@ -10,7 +10,7 @@ const Banner = () => {
       icon: <LocationIcon />,
       title: (
         <p className="text-black font-roboto text-[14px] not-italic font-normal leading-[18px]">
-          "Bulgan Soum, Ömnögovi Province, <br /> South Gobi 21220, Mongolia",
+          Bulgan Soum, Ömnögovi Province, <br /> South Gobi 21220, Mongolia
         </p>
       ),
     },
@@ -18,8 +18,8 @@ const Banner = () => {
       icon: <PlaneIcon />,
       title: (
         <p className="text-black font-roboto text-[14px] not-italic font-normal leading-[18px]">
-          "Domestic flight to Dalanzadgad (~1.5 hrs) from <br /> Chinggis Khaan
-          International Airport (UBN),",
+          Domestic flight to Dalanzadgad (~1.5 hrs) from <br /> Chinggis Khaan
+          International Airport (UBN)
         </p>
       ),
     },
@@ -27,7 +27,7 @@ const Banner = () => {
       icon: <CarIcon />,
       title: (
         <p className="text-black font-roboto text-[14px] not-italic font-normal leading-[18px]">
-          "Dalanzadgad Airport (DLZ) <br /> ~2 hours by car",
+          Dalanzadgad Airport (DLZ) <br /> ~2 hours by car
         </p>
       ),
     },
